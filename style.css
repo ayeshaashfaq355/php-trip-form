@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container h1,p{
+    text-align: center;
+}
+/* style.css */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-image: url('ChatGPT Image Jul 8, 2025, 02_34_41 AM.png');  /* tumhari wali image */
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moveBg 12s ease-in-out infinite; /* visible movement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@keyframes moveBg {
+    0%   { background-position: 50% 50%; }
+    25%  { background-position: 48% 52%; }
+    50%  { background-position: 52% 48%; }
+    75%  { background-position: 49% 51%; }
+    100% { background-position: 50% 50%; }
+}
+
+.container {
+    max-width: 400px;
+    min-height: 500px;
+    width: 90%;
+    padding: 25px 20px;
+    margin: 0 auto;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.15);         /* transparent white layer */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);                  /* 🔥 main blur effect */
+    -webkit-backdrop-filter: blur(10px);          /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);    /* light border like glass */
+}
+.container h1,
+.container p,
+form label {
+    color: #fff;  /* white text so it shows over transparent bg */
+}
+
+.container h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: black;
+}
+
+/* Placeholder fix */
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.8); /* ✅ dark visible placeholder */
+}
+
+/* Fix select text color */
+form select {
+    color: rgba(0, 0, 0, 0.8); /* same as inputs */
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect (same for both) */
+.btn:hover {
+    background-color: #1a1a1a; /* slightly lighter black */
+    box-shadow: 0 0 12px rgba(255, 191, 0, 0.6); /* golden glow */
+    transform: translateY(-2px); /* lift effect */
+}
+
+
+
+
+
+
